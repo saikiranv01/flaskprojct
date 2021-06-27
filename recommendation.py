@@ -2,11 +2,7 @@ import pandas as pd
 import scipy.sparse as sp
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from flask import Flask,request,jsonify
-from flask_cors import CORS
-import recommendation
-# df.head()
-movie_data = None
+
 def get_data():
     movie_data = pd.read_csv('data set/movie_data.csv.zip')
     movie_data['original_title'] = movie_data['original_title'].str.lower()
