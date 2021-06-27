@@ -8,7 +8,7 @@ import recommendation
 # df.head()
 movie_data = None
 def get_data():
-    movie_data = pd.read_csv('/Users/savemuri/Downloads/movie_data.csv.zip')
+    movie_data = pd.read_csv('data set/movie_data.csv.zip')
     movie_data['original_title'] = movie_data['original_title'].str.lower()
     return movie_data
 # df = get_data()
